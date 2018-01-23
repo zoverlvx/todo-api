@@ -78,9 +78,11 @@ module.exports = function(sequelize, DataTypes) {
                             }
                         }, function (err) {
                             reject();
+                            console.log(err);
                         });
                     } catch (err) {
                         reject();
+                        console.log(err);
                     }
             }); 
             }

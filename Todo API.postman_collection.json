@@ -1,0 +1,124 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Todo API",
+		"_postman_id": "7f89d86b-e20d-3938-bde9-0cabedba6fec",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET/todos",
+			"request": {
+				"url": "http://localhost:3000/todos",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET/todos/:id",
+			"request": {
+				"url": "http://localhost:3000/todos/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST/todos",
+			"request": {
+				"url": "{{apiUrl}}/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\" : \"  zover@bla.com\",\n  \"password\": \"fjirutgll\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /todos/:id",
+			"request": {
+				"url": "{{apiUrl}}/todos/",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /todos/:id",
+			"request": {
+				"url": "{{apiUrl}}/todos/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST/users",
+			"request": {
+				"url": "{{apiUrl}}/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\" : \"  zoverhulser@bla.com\",\n  \"password\": \"1234567\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST/users/login",
+			"request": {
+				"url": "{{apiUrl}}/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\" : \"  zoverhulser@bla.com\",\n  \"password\": \"1234567\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

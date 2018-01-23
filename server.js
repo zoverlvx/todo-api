@@ -2,9 +2,9 @@ const express = require("express"),
 bodyParser = require("body-parser"),
 _ = require("underscore"),
 db = require("./db.js"),
+bcrypt = require("bcrypt"),
 middleware = require("./middleware.js")(db),
 app = express(),
-bcrypt = require("bcrypt"),
 PORT = process.env.PORT || 3000;
 let todos = [];
 let _id = 0;
@@ -136,8 +136,9 @@ app.post("/users/login", function (req, res) {
         } else {
             res.status(401).send();
         } 
-    }, function () {
+    }, function (err) {
         res.status(401).send();
+        console.log(err);
     });
 
 });
