@@ -32,7 +32,7 @@
 		{
 			"name": "POST/todos",
 			"request": {
-				"url": "{{apiUrl}}/users",
+				"url": "{{apiUrl}}/todos",
 				"method": "POST",
 				"header": [
 					{
@@ -43,7 +43,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"email\" : \"  zover@bla.com\",\n  \"password\": \"fjirutgll\" \n}"
+					"raw": ""
 				},
 				"description": ""
 			},
@@ -83,7 +83,7 @@
 		{
 			"name": "POST/users",
 			"request": {
-				"url": "{{apiUrl}}/users/",
+				"url": "{{apiUrl}}/users",
 				"method": "POST",
 				"header": [
 					{
